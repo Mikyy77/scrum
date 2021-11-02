@@ -43,30 +43,67 @@ Cieľom tejto práce je predstaviť a bližšie ukázať spôsob vývoja softvé
 
 Agilná metodika je stále viac populárny spôsob vyvíjania softvérových projektov a väčšina efektívnych firiem ju v tejto dobe využíva. Ide o skupinu frameworkov, ktoré fungujú na princípe iteratívneho vývoja a na kolaborácii samostatne pracujúcich funkčných tímov.
 Celá filozofia agilnej metodiky je zameraná na inováciu. Ľudia v dnešnej dobe pracujú vo vysoko dynamických prostrediach, kde inovácia je nevyhnutne potrebná pre úspešný vývoj produktu. Moderné technológie sa vyvíjajú tak rýchlo, že ak firma neaplikuje dynamický prístup, produkty môžu byť zastarané a prakticky nepoužiteľné.
-Najznámejší framework agilnej metodiky je Scrum. Jeho cieľom je pomôcť ľuďom, tímom a organizáciám vytvárať hodnotu prostredníctvom prispôsobivého riešenia komplexných problémov. Scrum nie je detailne špecifikovaný, jeho pravidlá sú skôr na správne nasmerovanie a udržiavanie disciplíny v podniku. Ako uvádzajú hlavní vývojári tohto frameworku, Ken Schwaber a Jeff Sutherland: „Scrum je postavený na kolektívnej inteligencii ľudí, ktorí ho používajú.“~\cite{schwaber2020scrum}. K jeho hodnotám a filozofii sa dostaneme bližšie v časti~\ref{hodnoty}.
+Najznámejší framework agilnej metodiky je Scrum. Jeho cieľom je pomôcť ľuďom, tímom a organizáciám vytvárať hodnotu prostredníctvom prispôsobivého riešenia komplexných problémov. Scrum nie je detailne špecifikovaný, jeho pravidlá sú skôr na správne nasmerovanie a udržiavanie disciplíny v podniku. Ako uvádzajú hlavní vývojári tohto frameworku, Ken Schwaber a Jeff Sutherland: „Scrum je postavený na kolektívnej inteligencii ľudí, ktorí ho používajú.“[citacia1] K jeho hodnotám a filozofii sa dostaneme bližšie v časti~\ref{hodnoty}.
 Scrum je hlavne založený na princípe rýchleho a efektívneho vývoja produktov, ktorý je v dnešnej dynamickej dobe kľúčový. Tieto dynamické princípy môžeme vidieť hlavne v svetových softvérových firmách. Scrum však nie je výhodné implementovať pri veľkom množstve rutinných a repetitívnych úloh, ako napríklad pri účtovníctve alebo predajných hovoroch. Aj keď s prechodom na Scrum prichádza veľké riziko, osvojuje si ho viac a viac progresívnych manažérov. Začína sa dokonca stále viac používať mimo sféry softvérového inžinierstva.
 
 
 \section{Hodnoty a filozofia} \label{hodnoty}
 
-Skôr, ako sa pustíme do jednotlivých častí tohto frameworku, ideme si opísať, na čom je Scrum vlastne postavený. Tvorcovia Scrumu sa inšpirovali empiristickou filozofiou, ktorej základné myšlienky sú, že vedomosti nadobúdame zo skúseností a rozhodnutia robíme na základe toho, čo máme preskúmané. Scrum je postavený aj na „lean thinking“, čo je metóda organizovania ľudských aktivít takým spôsobom, aby sa ľudia nemrhali časom a sústredili sa na to najdôležitejšie~\cite{schwaber2020scrum}. Už z filozofie môžeme pochopiť, na akých princípoch Scrum funguje. Jedná sa o framework, v ktorom sa ľudia učia z vlastných chýb a sústredia sa na to najdôležitejšie, aby nestrácali čas na nepodstatných veciach. Takáto filozofia podnecuje produktivitu a dynamickosť vývojárov.
+Skôr, ako sa pustíme do jednotlivých častí tohto frameworku, ideme si opísať, na čom je Scrum vlastne postavený. Tvorcovia Scrumu sa inšpirovali empiristickou filozofiou, ktorej základné myšlienky sú, že vedomosti nadobúdame zo skúseností a rozhodnutia robíme na základe toho, čo máme preskúmané. Scrum je postavený aj na „lean thinking“, čo je metóda organizovania ľudských aktivít takým spôsobom, aby sa ľudia nemrhali časom a sústredili sa na to najdôležitejšie. Už z filozofie môžeme pochopiť, na akých princípoch Scrum funguje. Jedná sa o framework, v ktorom sa ľudia učia z vlastných chýb a sústredia sa na to najdôležitejšie, aby nestrácali čas na nepodstatných veciach. Takáto filozofia podnecuje produktivitu a dynamickosť vývojárov.
 
-Pre správne fungovanie Scrumu je potrebné, aby bol celý tím zdatný týchto v piatich oblastiach: \emph{oddanosť, sústredenie sa, otvorenosť, rešpekt a odvaha}. Scrum Tím musí byť oddaný splniť všetky svoje úlohy. Prvoradé zameranie Scrum Tímu je šprint, pri ktorom chce vždy spraviť čo najväčší progres. Viac o šprinte si povieme neskôr. Pri práci v tíme je vždy dôležité vzájomne sa rešpektovať. Ľudia v Scrum Tíme sú otvorení, hlavne čo sa týka vecí, na ktorých spoločne pracujú. Nevyhýbajú sa ťažkým problémom, majú odvahu im čeliť a riešiť ich~\cite{schwaber2020scrum}. Tieto hodnoty by mali byť základnou mentalitou všetkých Scrum Tímov. V dynamických prostrediach je z hľadiska maximálnej produktivity nutné ich dodržiavať, aby bol tím čo najefektívnejší a využíval plný potenciál Scrumu. 
+Pre správne fungovanie Scrumu je potrebné, aby bol celý tím zdatný týchto v piatich oblastiach: \emph{oddanosť, sústredenie sa, otvorenosť, rešpekt a odvaha}. [citacia2] Scrum Tím musí byť oddaný splniť všetky svoje úlohy. Prvoradé zameranie Scrum Tímu je šprint, pri ktorom chce vždy spraviť čo najväčší progres. Viac o šprinte si povieme neskôr. Pri práci v tíme je vždy dôležité vzájomne sa rešpektovať. Ľudia v Scrum Tíme sú otvorení, hlavne čo sa týka vecí, na ktorých spoločne pracujú. Nevyhýbajú sa ťažkým problémom, majú odvahu im čeliť a riešiť ich~\cite{}. Tieto hodnoty by mali byť základnou mentalitou všetkých Scrum Tímov. V dynamických prostrediach je z hľadiska maximálnej produktivity nutné ich dodržiavať, aby bol tím čo najefektívnejší a využíval plný potenciál Scrumu. 
 
 
 Z obr.~\ref{f:rozhod} je všetko jasné. 
 
 \begin{figure*}[tbh]
 \centering
-%\includegraphics[scale=1.0]{zadanie1.pdf}
+%\includegraphics[scale=1.0]{diagram.pdf}
 Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Náhodný obrázok.}
+\caption{Rozhodujúci argument.}
 \label{f:rozhod}
 \end{figure*}
 
-\cite{agile}
 
-\cite{techScrum}
+
+\section{Iná časť} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
 
 \section{Funkcie v Scrume} \label{funkcie}
 
