@@ -15,15 +15,14 @@
 
 \pagestyle{headings}
 
-\title{Vývoj softvérových projektov v rámci Scrum\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2020/21, vedenie: Ing. Vladimír Mlynarovič, PhD}} % meno a priezvisko vyučujúceho na cvičeniach
-
+\title{Vývoj softvérových projektov v rámci Scrum\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2020/21, vedenie: Ing. Vladimír Mlynarovič, PhD}}
 \author{Michal Darovec\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
 	{\small \texttt{xdarovec@stuba.sk}}
 	}
 
-\date{\small 26. október 2021} % upravte
+\date{\small 26. október 2021}
 
 
 
@@ -43,53 +42,74 @@ Cieľom tejto práce je predstaviť a bližšie ukázať spôsob vývoja softvé
 
 Agilná metodika je stále viac populárny spôsob vyvíjania softvérových projektov a väčšina efektívnych firiem ju v tejto dobe využíva. Ide o skupinu frameworkov, ktoré fungujú na princípe iteratívneho vývoja a na kolaborácii samostatne pracujúcich funkčných tímov.
 Celá filozofia agilnej metodiky je zameraná na inováciu. Ľudia v dnešnej dobe pracujú vo vysoko dynamických prostrediach, kde inovácia je nevyhnutne potrebná pre úspešný vývoj produktu. Moderné technológie sa vyvíjajú tak rýchlo, že ak firma neaplikuje dynamický prístup, produkty môžu byť zastarané a prakticky nepoužiteľné.
-Najznámejší framework agilnej metodiky je Scrum. Jeho cieľom je pomôcť ľuďom, tímom a organizáciám vytvárať hodnotu prostredníctvom prispôsobivého riešenia komplexných problémov. Scrum nie je detailne špecifikovaný, jeho pravidlá sú skôr na správne nasmerovanie a udržiavanie disciplíny v podniku. Ako uvádzajú hlavní vývojári tohto frameworku, Ken Schwaber a Jeff Sutherland: „Scrum je postavený na kolektívnej inteligencii ľudí, ktorí ho používajú.“~\cite{schwaber2020scrum}. K jeho hodnotám a filozofii sa dostaneme bližšie v časti~\ref{hodnoty}.
-Scrum je hlavne založený na princípe rýchleho a efektívneho vývoja produktov, ktorý je v dnešnej dynamickej dobe kľúčový. Tieto dynamické princípy môžeme vidieť hlavne v svetových softvérových firmách. Scrum však nie je výhodné implementovať pri veľkom množstve rutinných a repetitívnych úloh, ako napríklad pri účtovníctve alebo predajných hovoroch. Aj keď s prechodom na Scrum prichádza veľké riziko, osvojuje si ho viac a viac progresívnych manažérov. Začína sa dokonca stále viac používať mimo sféry softvérového inžinierstva.
 
+Najznámejší framework agilnej metodiky je Scrum. Jeho cieľom je pomôcť ľuďom, tímom a organizáciám vytvárať hodnotu prostredníctvom prispôsobivého riešenia komplexných problémov. Scrum nie je detailne špecifikovaný, jeho pravidlá sú skôr na správne nasmerovanie a udržiavanie disciplíny v podniku. Ako uvádzajú hlavní vývojári tohto frameworku, Ken Schwaber a Jeff Sutherland: „Scrum je postavený na kolektívnej inteligencii ľudí, ktorí ho používajú.“~\cite{schwaber2020scrum}. K jeho hodnotám a filozofii sa dostaneme bližšie v časti~\ref{hodnoty}.
+
+Scrum je hlavne založený na princípe rýchleho a efektívneho vývoja produktov, ktorý je v dnešnej dynamickej dobe kľúčový. Tieto dynamické princípy môžeme vidieť hlavne v svetových softvérových firmách. Scrum však nie je výhodné implementovať pri veľkom množstve rutinných a repetitívnych úloh, ako napríklad pri účtovníctve alebo predajných hovoroch.~\cite{agile} Aj keď s prechodom na Scrum prichádza veľké riziko, osvojuje si ho viac a viac progresívnych manažérov. Začína sa dokonca stále viac používať mimo sféry softvérového inžinierstva.
 
 \section{Hodnoty a filozofia} \label{hodnoty}
-Skôr, ako sa pustíme do jednotlivých častí tohto frameworku, ideme si opísať, na čom je Scrum vlastne postavený. Tvorcovia Scrumu sa inšpirovali empiristickou filozofiou, ktorej základné myšlienky sú, že vedomosti nadobúdame zo skúseností a rozhodnutia robíme na základe toho, čo máme preskúmané. Scrum je postavený aj na „lean thinking“, čo je metóda organizovania ľudských aktivít takým spôsobom, aby sa ľudia nemrhali časom a sústredili sa na to najdôležitejšie~\cite{schwaber2020scrum}. Už z filozofie môžeme pochopiť, na akých princípoch Scrum funguje. Jedná sa o framework, v ktorom sa ľudia učia z vlastných chýb a sústredia sa na to najdôležitejšie, aby nestrácali čas na nepodstatných veciach. Takáto filozofia podnecuje produktivitu a dynamickosť vývojárov.
+
+Skôr, ako sa pustíme do jednotlivých častí tohto frameworku, ideme si opísať, na čom je Scrum vlastne postavený. Tvorcovia Scrumu sa inšpirovali empiristickou filozofiou, ktorej základné myšlienky sú, že vedomosti nadobúdame zo skúseností a rozhodnutia robíme na základe toho, čo máme preskúmané. Scrum je postavený aj na "lean thinking", čo je metóda organizovania ľudských aktivít takým spôsobom, aby sa ľudia nemrhali časom a sústredili sa na to najdôležitejšie~\cite{schwaber2020scrum}. Už z filozofie môžeme pochopiť, na akých princípoch Scrum funguje. Jedná sa o framework, v ktorom sa ľudia učia z vlastných chýb a sústredia sa na to najdôležitejšie, aby nestrácali čas na nepodstatných veciach. Takáto filozofia podnecuje produktivitu a dynamickosť vývojárov.
 
 Pre správne fungovanie Scrumu je potrebné, aby bol celý tím zdatný týchto v piatich oblastiach: \emph{oddanosť, zameranie sa, otvorenosť, rešpekt a odvaha}. Scrum Tím musí byť oddaný splniť všetky svoje úlohy. Prvoradé zameranie Scrum Tímu je šprint, pri ktorom chce vždy spraviť čo najväčší progres. Viac o šprinte si povieme neskôr. Pri práci v tíme je vždy dôležité vzájomne sa rešpektovať. Ľudia v Scrum Tíme sú otvorení, hlavne čo sa týka vecí, na ktorých spoločne pracujú. Nevyhýbajú sa ťažkým problémom, majú odvahu im čeliť a riešiť ich~\cite{schwaber2020scrum}. Tieto hodnoty by mali byť základnou mentalitou všetkých Scrum Tímov. V dynamických prostrediach je z hľadiska maximálnej produktivity nutné ich dodržiavať, aby bol tím čo najefektívnejší a využíval plný potenciál Scrumu. 
-
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-\includegraphics[width=1.0\textwidth]{diagram}
-%Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Náhodný obrázok.}
-\label{f:rozhod}
-\end{figure*}
-
-\cite{agile}
-
-\cite{techScrum}
 
 \section{Funkcie v Scrume} \label{funkcie}
 
 Scrum dodržiava špecifický spôsob rozdeľovania úloh pri vývoji projektov. Scrum Tím je tím všetkých účastníkov v Scrum procese, ktorý sa rozdeľuje na Scrum Mastera, Product Ownera a samotný Tím, teda tím developerov. Treba rozlišovať Tím a Scrum Tím, tieto pojmy sa často mýlia. Všetci účastníci Scrumu spolu blízko spolupracujú, komunikujú a riešia problémy. Snažia sa sústrediť sa vždy na jeden spoločný cieľ, ktorý sa v Scrume nazýva Product Goal. Scrum Tímy prirodzene fungujú lepšie, keď sú menšie, ľudia spolu vedia bližšie komunikovať a sú produktívnejší. Menej ľudí tak často spraví viac práce. Ukázalo sa, že najvýhodnejšie je mať v tíme 10 a menej ľudí. Vo veľkých spoločnostiach preto treba Scrum správne implementovať, čo vyžaduje skúsených manažérov.
 
-\subsection{Scrum Master}
+\subsection{Scrum Master} \label{funkcie:master}
 
-\subsection{Product Owner}
+Scrum Master je hlavný dozorca všetkých projektov, dáva pozor, aby všetky procesy prebiehali tak, ako majú. Jeho hlavnou úlohou je zaistiť, aby bol tím čo najproduktívnejší a aby čo najrýchlejšie splnil požadovaný cieľ.~\cite{cprime} Mal by byť pohotový a vedieť narýchlo organizovať stretnutia tímu. Rola Scrum Mastera je veľmi zložitá, vyžaduje veľkú zodpovednosť a množstvo skúseností. 
+Jeho zodpovednosťou je:
 
-\subsection{Scrum Tím}
+\begin{itemize}
+\item naučiť Product Ownera, ako dosiahnuť čo najväčší zisk na investícii
+\item zvýšiť produktivitu Tímu vývojárov v každom možnom ohľade
+\item robiť pravidelné záznamy najnovšieho progresu v projekte tak, aby boli dodstupné pre každého
+\item pomáhať vývojárom rozvíjať kreativitu a sebavedomie
+\item zlepšovať technické postupy a pomôcky, aby boli všetky funkcionality aktuálne a použiteľné~\cite{cprime}
+\end{itemize}
 
-\section{Vývojový Proces} \label{proces}
+Keď je niekto Scrum Master, nestačí, že má dobré manažérske schopnosti, musí byť aj úplne stotožnený s fungovaním Scrumu, rozumieť technickým úlohám vývojárov, aby ich vedel v prípade potreby usmerniť a pomôcť im. Mal by vedieť vytvoriť prostredie, v ktorom ľudia vedia efektívne komunikovať a vzájomne si pomáhať s problémami. Keď vývojári pracujú na projekte, Scrum Master má vždy prehľad o aktuálnom stave projektu, zabezpečuje, aby sa postupovalo čo najrýchlejšie a v prípade prekážok, ktoré brzdia postupovanie projektu, ich okamžite skúša odstrániť.~\cite{cprime} Je maximálne flexibilný a má rozvinuté schopnosti riešenia problémov. Zdalo by sa, že keď má takéto zodpovednosti, tak zadáva Tímu úlohy, ale zadávanie úloh je práca Tímu. Je však jeho úlohou akokoľvek Tím povzbudiť a zjednodušiť mu rozhodovanie a riešenie problémov. Mal by vedieť naučiť svoj Tím správne a samostatne sa rozhodovať a vedieť sa navzájom dohodnúť.~\cite{cprime}
+
+
+\subsection{Product Owner} \label{funkcie:owner}
+
+Product Owner, alebo vlastník výrobku má za úlohu ukladať všetky požiadavky. Robí zástupcu zákazníkom a všetkým, ktorí sú nejakým spôsobom začlenení v projekte, takzvaným~\emph{stakeholders}. Čo sa týka požiadaviek a plánov, Tím má za úlohu počúvať iba Product Ownera. Jeho slovo je v projekte dôležité, ale táto funkcia so sebou nesie veľa rizík. Product Owner totiž nesie zodpovednosť za výrobok, rovnako ako za návrat investície na produkte. Musí sa preto snažiť o čo najväčšie zisky v porovnaní s nákladmi na výrobu výrobku. Tým, že úloha Product Ownera môže byť pri niektorých projektoch veľmi náročná, môže mať aj svoj vlastný tím, okrem Tímu vývojárov. Jeho úlohou je blízko spolupracovať s Tímom vývojárov a čo najjednoduchšie mu vysvetliť požiadavky používateľov a rôzne iné technické problémy. Mal by vedieť sprostredkovať Tímu, čo presne sa od nich chce v rámci vývoja produktu. ~\cite{techScrum}. Tiež má na starosti postup vývoja, ktoré veci implementovať skôr a ktoré naopak neskôr. Okrem týchto zodpovedností má za úlohu udržiavať~\emph{Product Backlog}, teda úložisko všetkých informácií o produkte. Toto úložisko musí pravidelne aktualizovať, aby tvoril aktuálny zoznam požiadaviek pre Tím vývojárov, aby vedeli, čo sa od nich očakáva, akým spôsobom majú vyvíjať produkt a akým veciam sa pri vývoji vyhýbať.~\cite{cprime}
+
+\subsection{Scrum Tím} \label{funkcie:tim}
+
+Tím developerov je v softvérových firmách samostatne fungujúci, krížovo funkčný tím vývojárov, ktorí spolupracujú na vývoji a testovaní produktu. V porovnaní s inými pracovnými štruktúrami je Tím v Scrume do veľkej miery samostatný, má autoritu robiť vlastné rozhodnutia o postupe svojej práce.~\cite{cprime} 
+
+Samostatne sa organizujúci tím má veľa výhod, nie je závislý na manažérovi a vie si prácu lepšie rozdeliť. Členovia Tímu sa vždy najskôr spoločne dohodnú, ako postupovať pri robení úloh, ako ich rozdeliť na menšie časti a spolu s tým rozhodujú, kto bude robiť na akej časti. Čo sa týka veľkosti Tímu, ako už bolo spomenuté, Tím funguje lepšie, keď má menej účastníkov, ideálny počet je teda od troch po desiatich ľudí. Keby mal Tím viac ľudí, už by začínali byť problémy s komunikáciou, viac ľudí by sa ťažšie dohodlo na rozdelení úloh a spôsobe robenia projektu.~\cite{cprime}
+
+Členovia Tímu sú zodpovední aj za:
+\begin{itemize}
+\item sledovanie stavu projektu počas Šprintu
+\item vytvorenie plánu pre Šprint, tzv. Sprint Backlog
+\item pravidelné aktualizovanie plánu až po dosiahnutie cieľa
+\item ostatných členov Tímu a ich prácu~\cite{schwaber2020scrum}
+\end{itemize}
+
+% v tejto časti sa bude nachádzať min. 1 diagram a bude tu vysvetlenie celého scrum procesu - hlavná časť článku, bude mať cca 1.5 strany
+\section{Vývojový Proces} \label{proces} 
+
+Vývojový proces sa skladá zo Šprintu a niekoľkých porád, pri ktorých sa na Šprint pripravuje alebo sa vyhodnocujú jeho výsledky. Porady sú najlepšia príležitosť implementovať prvky Scrumu a oboznámiť s nimi ľudí, ktorí ich tak dobre nepoznajú. Vývojový proces nie je komplikovaný, skladá sa z vytvorenia Product Backlogu, úložiska všetkých informácií a požiadaviek o produkte, plánovania Šprintu, vytvorenia Sprint Backlogu a zo samotného Šprintu. Po ukončení tohto procesu máme vytvorený potenciálne odovzdateľný produkt, v Scrume ho označujeme ako inkrement. Celý vývojový proces trvá 2 až 4 týždne a opakuje sa dovtedy, kým nie je vytvorený produkt podľa požiadaviek.~\cite{techScrum} 
+
+%približne 60% celého článku
+\subsection{Šprint}
+
+\subsection{Plánovanie}
+
+\subsection{Denný Scrum}
+
+\subsection{Vyhodnotenie}
 
 \section{Výhody Scrumu} \label{proces}
 
 \section{Záver} \label{zaver}
 
 
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliography{literatura}
-\bibliographystyle{alpha} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliographystyle{alpha}
 \end{document}
